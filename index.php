@@ -51,7 +51,7 @@
 			</thead>
 			<tbody>
 				<?php
-				foreach($people as $data)
+				foreach($people as $id => $data)
 				{
 					?>
 					<tr>
@@ -59,7 +59,7 @@
 						<td><?php echo $data['first_name'];?></td>
 						<td><?php echo $data['last_name'];?></td>
 						<td><?php echo $data['email'];?></td>
-						<td class="center"><button class="moreinfo" id="<?php echo $data['id']-1;?>">+</button></td>
+						<td class="center"><button class="moreinfo" id="<?php echo $id;?>">+</button></td>
 					</tr>
 					<?php
 				}
