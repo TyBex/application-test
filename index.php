@@ -8,8 +8,8 @@
 				width:100%;
 				min-width:500px;
 				border-collapse: separate;
-    		border-spacing: 0px;
-    		border: 1px solid #ccc
+				border-spacing: 0px;
+				border: 1px solid #ccc
 			}
 			tr{
 				width:100%;
@@ -31,13 +31,13 @@
 	</head>
 	<body>
 		<?php
-			$people = array(
-			   array('id'=>1, 'first_name'=>'John', 'last_name'=>'Smith', 'email'=>'john.smith@hotmail.com'),
-			   array('id'=>2, 'first_name'=>'Paul', 'last_name'=>'Allen', 'email'=>'paul.allen@microsoft.com'),
-			   array('id'=>3, 'first_name'=>'James', 'last_name'=>'Johnston', 'email'=>'james.johnston@gmail.com'),
-			   array('id'=>4, 'first_name'=>'Steve', 'last_name'=>'Buscemi', 'email'=>'steve.buscemi@yahoo.com'),
-			   array('id'=>5, 'first_name'=>'Doug', 'last_name'=>'Simons', 'email'=>'doug.simons@hotmail.com')
-			);
+		$people = array(
+			array('id'=>1, 'first_name'=>'John', 'last_name'=>'Smith', 'email'=>'john.smith@hotmail.com'),
+			array('id'=>2, 'first_name'=>'Paul', 'last_name'=>'Allen', 'email'=>'paul.allen@microsoft.com'),
+			array('id'=>3, 'first_name'=>'James', 'last_name'=>'Johnston', 'email'=>'james.johnston@gmail.com'),
+			array('id'=>4, 'first_name'=>'Steve', 'last_name'=>'Buscemi', 'email'=>'steve.buscemi@yahoo.com'),
+			array('id'=>5, 'first_name'=>'Doug', 'last_name'=>'Simons', 'email'=>'doug.simons@hotmail.com')
+		);
 		?>
 		<table>
 			<thead>
@@ -71,7 +71,7 @@
 	<script type="text/javascript">
 		var people = <?php echo(json_encode($people));?> 
 		$(".moreinfo").click(function() {
-	  	alert('Name : ' + people[this.id].first_name + ' ' + people[this.id].last_name + '\nEmail : ' + people[this.id].email);
+			alert('Name : ' + people[this.id].first_name + ' ' + people[this.id].last_name + '\nEmail : ' + people[this.id].email);
 		});
 	</script>
 </html>
