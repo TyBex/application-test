@@ -5,27 +5,27 @@
 		<title>Tyler Beck : Fork - https://github.com/ebasefm/application-test</title>
 		<style>
 			table{
-				width:100%;
-				min-width:500px;
+				width: 100%;
+				min-width: 500px;
 				border-collapse: separate;
 				border-spacing: 0px;
 				border: 1px solid #ccc
 			}
 			tr{
-				width:100%;
-				min-width:500px
+				width: 100%;
+				min-width: 500px
 			}
 			th, td{
-				width:20%;
-				padding:3px;
-				min-width:125px;
+				width: 20%;
+				padding: 3px;
+				min-width: 125px;
 				border: 1px solid #ccc
 			}
 			button.moreinfo{
-				width:25%
+				width: 25%
 			}
 			.center{
-				text-align:center
+				text-align: center
 			}
 		</style>
 	</head>
@@ -55,11 +55,11 @@
 				{
 					?>
 					<tr>
-						<td class="center"><?php echo $data['id'];?></td>
-						<td><?php echo $data['first_name'];?></td>
-						<td><?php echo $data['last_name'];?></td>
-						<td><?php echo $data['email'];?></td>
-						<td class="center"><button class="moreinfo" id="<?php echo $id;?>">+</button></td>
+						<td class="center"><?php echo $data['id']; ?></td>
+						<td><?php echo $data['first_name']; ?></td>
+						<td><?php echo $data['last_name']; ?></td>
+						<td><?php echo $data['email']; ?></td>
+						<td class="center"><button class="moreinfo" id="<?php echo $id; ?>">+</button></td>
 					</tr>
 					<?php
 				}
@@ -69,7 +69,7 @@
 	</body>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript">
-		var people = <?php echo(json_encode($people));?> 
+		var people = <?php echo(json_encode($people)); ?> 
 		$(".moreinfo").click(function() {
 			alert('Name : ' + people[this.id].first_name + ' ' + people[this.id].last_name + '\nEmail : ' + people[this.id].email);
 		});
